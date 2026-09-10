@@ -1,4 +1,4 @@
-# Hiver Customer Support System — Take-Home Project
+# Hiver Customer Support System 
 
 Automated customer support intelligence platform built on real-world customer support interactions from the Twitter Customer Support dataset.
 
