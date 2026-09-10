@@ -1,0 +1,58 @@
+# =============================================================================
+# Gitignore for Hiver Customer Support System
+# =============================================================================
+
+# 1. Raw datasets (MUST NOT be committed to Git)
+data/raw/*.csv
+data/raw/*.zip
+data/raw/*.parquet
+data/raw/.cache/
+
+# 2. Large generated files (> 2 MB)
+# Can be deterministically regenerated via: python scripts/prepare_spotify_data.py
+data/processed/*.parquet
+data/processed/*.jsonl
+data/processed/hard_cases.csv
+
+# Keep small reproducibility samples & metadata
+!data/processed/dataset_summary.json
+!data/processed/candidate_details.json
+!data/processed/spotify_pairs_sample.csv
+
+# 3. Environment & Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# 4. Python runtime, cache, and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+ENV/
+env/
+
+# 5. IDE, editor, and OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+powershell.cmd
+
+# 6. Logs & temporary files
+*.log
+*.tmp
+*.temp
+scratch/
