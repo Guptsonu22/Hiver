@@ -3,7 +3,7 @@
 Every number below is an actual verified output. Judge-dependent cells are marked
 PENDING (calibration 0/100, no API key, zero API calls made) — never filled with
 estimates. Full evidence: `docs/judge_rubric.md`, `docs/failure_modes.md`,
-`docs/decision_log.md` (D1–D25).
+`DECISIONS.md` (D1–D13 consolidated).
 
 ## 1. Problem framing
 Twitter support (@SpotifyCares, 43,092 customer→brand pairs) is high-volume,
@@ -27,7 +27,7 @@ hard cases. Deterministic seeds (42) throughout.
 ## 4. Taxonomy
 10 intents (8 technical + `unclear_insufficient_context` + `other_miscellaneous`),
 keyword patterns + business-priority tie-breaks (`src/intents/taxonomy.py`). Training
-labels are **weak/heuristic** (D11) — the supervision ceiling for any learner (see §12 FM3).
+labels are **weak/heuristic** (D9) — the supervision ceiling for any learner (see §12 FM3).
 
 ## 5. Golden evaluation set
 322 candidates; **150 human-reviewed = the ONLY ground truth**; 172 pending excluded
@@ -42,7 +42,7 @@ TF-IDF kNN classifier (k=5, similarity-weighted, keyword fallback) → TF-IDF to
 retrieval → extractive top-1 historical reply (hallucination impossible by
 construction; LLM path opt-in, fail-closed) → rule escalation (security/financial,
 unclear, top-sim < 0.15, ambiguity margin < 0.05) → structured output with per-call
-leakage assertion. Retrieval vectorized via `lexsort` (D23).
+leakage assertion. Retrieval vectorized via `lexsort` (D13).
 
 ## 8. Evaluation methodology
 Intent: accuracy/macro-F1/per-class F1 (same function for all systems). Reply quality:
@@ -117,6 +117,6 @@ support; no resolution/outcome modeling (response type ≠ resolution, D6).
 1. Finish 100-row calibration + judge run (unblocks §9–§11). 2. Security-first override
 + red-team slice (FM5). 3. Follow-up detector with parent-intent inheritance (FM1).
 4. Language gate → escalate non-English (FM4). 5. Duplicate label-cleaning + keyword
-cross-check (FM3). Decisions: D1–D12 in `DECISIONS.md`, D13–D25 in
-`docs/decision_log.md`. Reproduce: venv + `pip install -r requirements.txt` +
-`pytest`; see README for full command map.
+cross-check (FM3). Decisions: D1–D13 consolidated in `DECISIONS.md`.
+Reproduce: venv + `pip install -r requirements.txt` + `pytest`; see README
+for full command map.

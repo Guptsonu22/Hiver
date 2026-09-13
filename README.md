@@ -144,7 +144,7 @@ python -m pytest tests/test_phase2.py -v
 * `docs/spotify_data_quality.md` — Full empirical data hygiene and language report.
 * `docs/intent_taxonomy.md` — Machine-readable taxonomy specifications and boundaries.
 * `docs/intent_examples.md` — Representative real tweet examples per intent.
-* `DECISIONS.md` — Formal architectural decision log (D1–D12).
+* `DECISIONS.md` — Formal architectural decision log (D1–D13 consolidated).
 * `src/data/` — Core modules for loading, conversation tree reconstruction, and response classification.
 * `src/intents/taxonomy.py` — Taxonomy definitions, regex patterns, and tie-breaking priority rules.
 * `tests/test_phase2.py` — Pytest suite (**72/72 tests passing**).
@@ -175,7 +175,7 @@ reproducible LLM-judge + human-agreement protocol. Full rubric:
   `results/judge_outputs.jsonl`); runner `scripts/run_judge.py` enforces
   calibration-first ordering and writes `results/judge_metrics.json`
   (agreement: exact rate + linear-weighted kappa; per-baseline means).
-* **Status:** implementation + judge/agent/annotator unit tests done (full suite 171 passed,
+* **Status:** implementation + judge/agent/annotator unit tests done (full suite 185 passed,
   1 skipped); calibration 0/100 (one unverifiable row reset to pending for integrity);
   NO human labels / judge scores / agreement numbers fabricated —
   `results/judge_metrics.json` will be generated only after real annotation +
@@ -195,7 +195,7 @@ python -m venv .venv
 
 **Commands:**
 ```powershell
-.\.venv\Scripts\python.exe -m pytest -q                          # full suite (expect 171 passed, 1 skipped)
+.\.venv\Scripts\python.exe -m pytest -q                          # full suite (expect 185 passed, 1 skipped)
 .\.venv\Scripts\python.exe scripts/build_judge_inputs.py         # 300 judge inputs + 50-ex calibration + 100-row template
 .\.venv\Scripts\python.exe scripts/annotate_judge_calibration.py # human calibration (100 rows; --status to check; --suggest optional, needs key)
 .\.venv\Scripts\python.exe scripts/generate_machine_calibration.py # MACHINE diagnostic only (never human labels; see docs/machine_calibration.md)
@@ -212,7 +212,7 @@ python -m venv .venv
 labels, NO agreement — see `docs/machine_calibration.md`);
 `data/judge/{judge_inputs_full150.jsonl, calibration_sample.csv,
 human_calibration.csv}`; docs: `judge_rubric.md`, `failure_modes.md`, `decision_log.md`
-(D13–D25), `final_report.md` (15 sections).
+(D1–D13), `final_report.md` (15 sections).
 
 **API configuration:** set a freshly rotated `OPENAI_API_KEY` in the environment
 (optional `JUDGE_MODEL`, default `gpt-4o-mini`); never commit secrets (`.env`/`.env.*`/
