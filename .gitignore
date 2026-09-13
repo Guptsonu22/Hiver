@@ -56,3 +56,7 @@ powershell.cmd
 *.tmp
 *.temp
 scratch/
+
+# 7. Annotation provenance backups (golden set snapshots) - kept for audit trail
+# data/golden/*.before_*.csv and data/golden/batch_*_review.txt are legitimate
+# provenance and are committed intentionally.

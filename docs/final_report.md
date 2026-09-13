@@ -77,7 +77,8 @@ requirement is UNSATISFIED; all reply-quality and agreement cells below remain P
 
 ## 11. Results (real; reply-quality judge cells PENDING)
 
-| | MostFreq | Keyword | SupportAgent |
+| Metric | MostFreq | Keyword | SupportAgent |
+|:---|:---:|:---:|:---:|
 | Intent Accuracy | 0.0467 | 0.5800 | **0.4867** |
 | Intent Macro F1 | 0.0089 | 0.5914 | **0.5086** |
 | Reply Relevance | PENDING | PENDING | PENDING |
@@ -88,7 +89,7 @@ requirement is UNSATISFIED; all reply-quality and agreement cells below remain P
 | Overall Reply Score | PENDING | PENDING | PENDING |
 | Retrieval success / empty rate | — | — | 1.00 / 0.00 |
 | Mean top-1 similarity | — | — | 0.5967 |
-| Escalation rate | 0.00 | 0.153 | 0.38 |
+| Escalation rate | 0.00 | 0.153 | **0.38** |
 
 ## 12. Top 5 failure modes (real; `docs/failure_modes.md`)
 FM1 follow-ups confidently wrong at sim 0.87–0.97 ("are u serious" → offline,
@@ -117,5 +118,5 @@ support; no resolution/outcome modeling (response type ≠ resolution, D6).
 + red-team slice (FM5). 3. Follow-up detector with parent-intent inheritance (FM1).
 4. Language gate → escalate non-English (FM4). 5. Duplicate label-cleaning + keyword
 cross-check (FM3). Decisions: D1–D12 in `DECISIONS.md`, D13–D25 in
-`docs/decision_log.md`. Reproduce:venv + `pip install -r requirements.txt` +
+`docs/decision_log.md`. Reproduce: venv + `pip install -r requirements.txt` +
 `pytest`; see README for full command map.

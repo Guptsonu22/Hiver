@@ -1,0 +1,511 @@
+SpotifyCares Golden Candidate Batch 01 Review
+READ-ONLY REVIEW FILE - not annotation data
+Source: data/golden/golden_candidates.csv
+Candidates: 20
+====================================================================================================
+
+ITEM 1/20
+Candidate ID: cand_0139
+Hard-case category: context_dependent_followup
+Existing heuristic intent: unclear_insufficient_context
+
+Customer message:
+@SpotifyCares Still waiting:(
+
+Preceding conversation context:
+Customer: @SpotifyCares 
+When will India get Spotify?😞
+Brand: @446702 We don't have any more info to share about this right now, but hopefully we'll be available there soon :) /AJ
+
+Brand response:
+@446702 We're afraid we're unable to give you an exact date yet. Don't forget to add your email to the link we've sent earlier to get updates /MG
+
+Suggestion, not a human label:
+  Suggested primary intent: unclear_insufficient_context
+  Suggested secondary intent: 
+  Suggested ambiguous flag: True
+  Suggested multi-intent flag: False
+  Confidence: low
+  Reasoning: Customer message and available context lack enough diagnostic detail; guidelines route this to unclear_insufficient_context.
+----------------------------------------------------------------------------------------------------
+
+ITEM 2/20
+Candidate ID: cand_0144
+Hard-case category: context_dependent_followup
+Existing heuristic intent: offline_downloads_issue
+
+Customer message:
+@SpotifyCares Thanks
+
+Preceding conversation context:
+Customer: @SpotifyCares @129773 @15778 Hi, will you be providing options for downloads or the app to be on "external storage" /SD card...
+Customer: @SpotifyCares @129773 @15778 ...formatted as internal storage on Android? Thanks
+Brand: @301192 Hi Victoria! To select your storage device, just follow the steps under Android here: https://t.co/zEMYB82ZiG. Let us know how it goes /GT
+Customer: @SpotifyCares This only works if you format the SD card as "portable storage", which is how I have it on my phone, I opted for int fmt with my new device.
+Customer: @SpotifyCares I tested this last night, with the new device too; reformatted as portable, and I had the option, but prefer the internal format.
+Brand: @301192 Got it! We appreciate your feedback. We'll make sure to let the right folks know it's something you'd like to see /GT
+
+Brand response:
+@301192 You're welcome! We're just a tweet away if you need anything else. https://t.co/uEkAlnxbzn 🙂 /CX
+
+Suggestion, not a human label:
+  Suggested primary intent: other_miscellaneous
+  Suggested secondary intent: 
+  Suggested ambiguous flag: False
+  Suggested multi-intent flag: False
+  Confidence: low
+  Reasoning: No specific support-domain evidence matched; guidelines keep this as other_miscellaneous rather than inventing a label.
+----------------------------------------------------------------------------------------------------
+
+ITEM 3/20
+Candidate ID: cand_0240
+Hard-case category: context_dependent_followup
+Existing heuristic intent: content_catalog_licensing
+
+Customer message:
+@SpotifyCares Thanks a bunch. 👍👍👍👍
+
+Preceding conversation context:
+Customer: @115888 can you guys pls make Nigeria part of your region! Plsss we love music too!!!
+Brand: @663845 Hey! We've just replied to your DM. Check your Messages 🙂 /BM
+
+Brand response:
+@663845 No worries! Let us know if we can help you with anything else /BM
+
+Suggestion, not a human label:
+  Suggested primary intent: other_miscellaneous
+  Suggested secondary intent: 
+  Suggested ambiguous flag: False
+  Suggested multi-intent flag: False
+  Confidence: low
+  Reasoning: No specific support-domain evidence matched; guidelines keep this as other_miscellaneous rather than inventing a label.
+----------------------------------------------------------------------------------------------------
+
+ITEM 4/20
+Candidate ID: cand_0254
+Hard-case category: context_dependent_followup
+Existing heuristic intent: billing_subscription_payment
+
+Customer message:
+@SpotifyCares Thank you!
+
+Preceding conversation context:
+Customer: @SpotifyCares I just purchased the student discount but already had premium. Will it automatically update? Or will i charged twice?
+Brand: @680151 Hey Sean! Don't worry, you won't be charged twice, the new rate will start automatically on your next renewal date 🙂 /KL
+
+Brand response:
+@680151 You're welcome! If you ever need anything else, just shout and we'll come running 🏃 /KL
+
+Suggestion, not a human label:
+  Suggested primary intent: other_miscellaneous
+  Suggested secondary intent: 
+  Suggested ambiguous flag: False
+  Suggested multi-intent flag: False
+  Confidence: low
+  Reasoning: No specific support-domain evidence matched; guidelines keep this as other_miscellaneous rather than inventing a label.
+----------------------------------------------------------------------------------------------------
+
+ITEM 5/20
+Candidate ID: cand_0269
+Hard-case category: context_dependent_followup
+Existing heuristic intent: unclear_insufficient_context
+
+Customer message:
+@SpotifyCares Gooood lookin
+
+Preceding conversation context:
+Customer: @115888 can yall do me a big favor
+Brand: @717059 Hey there! What can we do for you today? 🙂 /KT
+Customer: @SpotifyCares Brooooo im real life struggling and I need the spotify premium b
+Brand: @717059 Don't worry. If you haven't had Premium yet, you can get a free trial at https://t.co/WB5TSxRfDe 🙂 /KT
+
+Brand response:
+@717059 Cool! If you ever need us again, just... https://t.co/AUc7DGJpgF 💚 /KT
+
+Suggestion, not a human label:
+  Suggested primary intent: unclear_insufficient_context
+  Suggested secondary intent: 
+  Suggested ambiguous flag: True
+  Suggested multi-intent flag: False
+  Confidence: low
+  Reasoning: Customer message and available context lack enough diagnostic detail; guidelines route this to unclear_insufficient_context.
+----------------------------------------------------------------------------------------------------
+
+ITEM 6/20
+Candidate ID: cand_0298
+Hard-case category: context_dependent_followup
+Existing heuristic intent: unclear_insufficient_context
+
+Customer message:
+@SpotifyCares Thank you!!
+
+Preceding conversation context:
+Customer: Why does @115888 have to show me this everytime I️ launch the app even though I️ already have premium... https://t.co/4sZbN12deU
+Brand: @771411 Awesome! We've closed your Free account so you're all set. Let us know if you need anything else /JQ
+
+Brand response:
+@771411 Anytime! Let us know if you ever need us again. We'd be... https://t.co/LgAM6ky9Vv /JQ
+
+Suggestion, not a human label:
+  Suggested primary intent: other_miscellaneous
+  Suggested secondary intent: 
+  Suggested ambiguous flag: False
+  Suggested multi-intent flag: False
+  Confidence: low
+  Reasoning: No specific support-domain evidence matched; guidelines keep this as other_miscellaneous rather than inventing a label.
+----------------------------------------------------------------------------------------------------
+
+ITEM 7/20
+Candidate ID: cand_0310
+Hard-case category: context_dependent_followup
+Existing heuristic intent: unclear_insufficient_context
+
+Customer message:
+@SpotifyCares Thanks!
+
+Preceding conversation context:
+Customer: Pana la urma se lanseaza @115888 in Romania azi?
+Brand: @802390 Hey Andrei! We don't have a specific date, but we're launching in new countries as often as possible. Be sure to add your email at https://t.co/X8DVSX9QgM /KL
+
+Brand response:
+@802390 You're welcome! Stay awesome /KL
+
+Suggestion, not a human label:
+  Suggested primary intent: other_miscellaneous
+  Suggested secondary intent: 
+  Suggested ambiguous flag: False
+  Suggested multi-intent flag: False
+  Confidence: low
+  Reasoning: No specific support-domain evidence matched; guidelines keep this as other_miscellaneous rather than inventing a label.
+----------------------------------------------------------------------------------------------------
+
+ITEM 8/20
+Candidate ID: cand_0318
+Hard-case category: context_dependent_followup
+Existing heuristic intent: unclear_insufficient_context
+
+Customer message:
+@SpotifyCares All good
+
+Preceding conversation context:
+Customer: Spotify is down and I need music
+Brand: @491261 Hey Maury! We've made a few tweaks backstage, so this should now be fixed up. Let us know if not /CE
+
+Brand response:
+@491261 Great! Glad to hear it's working. Just give us a shout if we can help with anything else. https://t.co/m4HWSbgHVZ /CE
+
+Suggestion, not a human label:
+  Suggested primary intent: unclear_insufficient_context
+  Suggested secondary intent: 
+  Suggested ambiguous flag: True
+  Suggested multi-intent flag: False
+  Confidence: low
+  Reasoning: Customer message and available context lack enough diagnostic detail; guidelines route this to unclear_insufficient_context.
+----------------------------------------------------------------------------------------------------
+
+ITEM 9/20
+Candidate ID: cand_0019
+Hard-case category: multi_intent
+Existing heuristic intent: content_catalog_licensing
+
+Customer message:
+@125633 Is there a tool to post a playlist from an artist page yet? It'd be good to share playlists with fans that don't lead back to personal page
+
+Preceding conversation context:
+Customer: Great news: You can now edit your artist bio on Spotify! Learn more here: https://t.co/IpYag6Y4RH https://t.co/u2eZp4OgDv
+
+Brand response:
+@541590 Hey! You can contact our Artist team here: https://t.co/p1wbtdELHu! If you've reached out, DM us your email address &amp; we'll chase it up /Q https://t.co/ldFdZRiNAt
+
+Suggestion, not a human label:
+  Suggested primary intent: content_catalog_licensing
+  Suggested secondary intent: playlist_library_curation
+  Suggested ambiguous flag: True
+  Suggested multi-intent flag: True
+  Confidence: medium
+  Reasoning: Multiple taxonomy patterns matched (content_catalog_licensing, playlist_library_curation); guideline priority rules select content_catalog_licensing.
+----------------------------------------------------------------------------------------------------
+
+ITEM 10/20
+Candidate ID: cand_0029
+Hard-case category: multi_intent
+Existing heuristic intent: offline_downloads_issue
+
+Customer message:
+@SpotifyCares it says im offline on the desktop app but im connected to the wifi...and for the webplayer it’s stuck on an ad that wont play...
+
+Preceding conversation context:
+Customer: @115888 your desktop app and online web player have been troublesome for the past few days, what gives
+Brand: @205597 Hey there! Can you let us know what's happening exactly? We'll see what we can suggest /FR
+
+Brand response:
+@205597 That's not cool. Does logging out &gt; restarting the device &gt; logging back in help? Keep us posted /VK
+
+Suggestion, not a human label:
+  Suggested primary intent: offline_downloads_issue
+  Suggested secondary intent: playback_streaming_issue,app_technical_device
+  Suggested ambiguous flag: True
+  Suggested multi-intent flag: True
+  Confidence: medium
+  Reasoning: Multiple taxonomy patterns matched (playback_streaming_issue, offline_downloads_issue, app_technical_device); guideline priority rules select offline_downloads_issue.
+----------------------------------------------------------------------------------------------------
+
+ITEM 11/20
+Candidate ID: cand_0066
+Hard-case category: multi_intent
+Existing heuristic intent: playlist_library_curation
+
+Customer message:
+@SpotifyCares If I uninstall Spotify and reinstall it, will my saved playlists delete? Would I have to start new?
+
+Preceding conversation context:
+Brand: Attention playlist curators! We have two @16134 Wireless Multi-Room Speakers up for grabs. Go.
+https://t.co/2rlqX1mY4G
+
+Brand response:
+@558533 Hey Nelly! Are you referring to music that you saved for offline or just in Your Library? /GS
+
+Suggestion, not a human label:
+  Suggested primary intent: playlist_library_curation
+  Suggested secondary intent: app_technical_device
+  Suggested ambiguous flag: True
+  Suggested multi-intent flag: True
+  Confidence: medium
+  Reasoning: Multiple taxonomy patterns matched (playlist_library_curation, app_technical_device); guideline priority rules select playlist_library_curation.
+----------------------------------------------------------------------------------------------------
+
+ITEM 12/20
+Candidate ID: cand_0070
+Hard-case category: multi_intent
+Existing heuristic intent: playlist_library_curation
+
+Customer message:
+@SpotifyCares @115888 @127972 Thank you!😊Lots of #Roku users really love #Spotify but it's so frustrating that an important feature like playlists is missing atm!😔#RokuUK
+
+Preceding conversation context:
+Customer: .@SpotifyCares Any update RE: lack of #Spotify playlists on @127972?🤷Lack of @181080 from @115888 on this is crazy!😳😕#Roku #RokuUK https://t.co/PWLDJNgP0K
+Brand: @295152 Hey there! We have some info about the Spotify app on Roku here: https://t.co/titMn0j3Im. Give us a shout if there's anything else /AC
+Customer: @SpotifyCares Thanks!😊But, that info is from March 2017: many users in #RokuUK &amp; other regions wish to know WHEN #Spotify playlists will return to #Roku?🤷
+Brand: @295152 We don't have any more info right now. Rest assured, your feedback is being heard while we work with Roku on the best path forwards /AC
+Customer: @SpotifyCares Thanks, but this same line has been repeated 'ad infinitum' and it's been 6+ months now... @115888 and @127972 need better @75235!😞😒😣
+Brand: @295152 We understand where you're coming from. We'll make sure to let the right team know you'd like to see this again soon. Stay tuned /AC
+Customer: @SpotifyCares That trio of lines has worn pretty thin now!😩This really needs to be a priority when #Roku users must pay for premium to even use the app!🤨😒
+Customer: @SpotifyCares Is there no way to implement @115888 Connect with @127972, even as an interim gesture of goodwill, so #Roku users don't have to pay!?!🤷
+Brand: @295152 @115888 @127972 We hear you 🎧 It's definitely something for the team to consider and we'll make sure it reaches them /AC
+
+Brand response:
+@295152 You're welcome! We appreciate all the feedback. We’ll get this passed onto the right team 💚 /AC
+
+Suggestion, not a human label:
+  Suggested primary intent: playlist_library_curation
+  Suggested secondary intent: app_technical_device,other_miscellaneous
+  Suggested ambiguous flag: True
+  Suggested multi-intent flag: True
+  Confidence: medium
+  Reasoning: Multiple taxonomy patterns matched (playlist_library_curation, app_technical_device, other_miscellaneous); guideline priority rules select playlist_library_curation.
+----------------------------------------------------------------------------------------------------
+
+ITEM 13/20
+Candidate ID: cand_0071
+Hard-case category: multi_intent
+Existing heuristic intent: offline_downloads_issue
+
+Customer message:
+@SpotifyCares It is happening with other artists, sometimes it says "cant play song" I think but mostly I just try to click it and nothing plays. I uninstalled the app and re-downloaded it but that didn't help.
+
+Preceding conversation context:
+Customer: @115888 hey guys, I can't listen to Lana Del Rey.. that is a problem. I can't play half the songs in most of my playlist. What's wrong??
+Brand: @321971 Hey there! Are you getting an error message? Also, is this happening only with that artist's tracks? /RH
+
+Brand response:
+@321971 Can you let us know the device, operating system, and Spotify version you're using? We'll see what we can suggest /RH
+
+Suggestion, not a human label:
+  Suggested primary intent: offline_downloads_issue
+  Suggested secondary intent: playback_streaming_issue
+  Suggested ambiguous flag: True
+  Suggested multi-intent flag: True
+  Confidence: medium
+  Reasoning: Multiple taxonomy patterns matched (playback_streaming_issue, offline_downloads_issue); guideline priority rules select offline_downloads_issue.
+----------------------------------------------------------------------------------------------------
+
+ITEM 14/20
+Candidate ID: cand_0079
+Hard-case category: multi_intent
+Existing heuristic intent: playback_streaming_issue
+
+Customer message:
+@SpotifyCares All songs from his new album are already available in my country :) And I don't have any trouble playing them now. Thank you!
+
+Preceding conversation context:
+Customer: On @327793 there are not available all songs :( Only 'Postcards in the Sky' song and songs from both EPs. @68312 @63190
+Brand: @327792 Hi Madeline, help's here. Can you let us know the device/OS and Spotify version you're using? We'll see what we can suggest /NY
+Customer: @SpotifyCares Thanks for noticing it :) With some time more and more songs are getting available.
+Brand: @327792 Sometimes content gets temporarily removed because of licensing changes. Are you having trouble playing any of David Archuleta's songs? /TB
+
+Brand response:
+@327792 That's great to hear! Just let us know if you need anything else. We'd be... https://t.co/LgAM6ky9Vv /TB
+
+Suggestion, not a human label:
+  Suggested primary intent: playback_streaming_issue
+  Suggested secondary intent: content_catalog_licensing,other_miscellaneous
+  Suggested ambiguous flag: True
+  Suggested multi-intent flag: True
+  Confidence: medium
+  Reasoning: Multiple taxonomy patterns matched (playback_streaming_issue, content_catalog_licensing, other_miscellaneous); guideline priority rules select playback_streaming_issue.
+----------------------------------------------------------------------------------------------------
+
+ITEM 15/20
+Candidate ID: cand_0090
+Hard-case category: multi_intent
+Existing heuristic intent: content_catalog_licensing
+
+Customer message:
+@SpotifyCares Either my mobile (android) or desktop (windows 10). It doesnt respond when i click them, if i try shuffle i get "this song is not available"
+
+Preceding conversation context:
+Customer: Hi @115888 for some reason my account wont play Kesha tracks. Ive tried downloading it and it still doesnt work?
+Brand: @340652 Hey there! Can you let us know the device/OS you’re using? Also, are you receiving any error messages? Keep us posted /TB
+
+Brand response:
+@340652 Got it, thanks for the info. Does logging out &gt; restarting the device &gt; logging back in help? Keep us posted /TB
+
+Suggestion, not a human label:
+  Suggested primary intent: content_catalog_licensing
+  Suggested secondary intent: playlist_library_curation
+  Suggested ambiguous flag: True
+  Suggested multi-intent flag: True
+  Confidence: medium
+  Reasoning: Multiple taxonomy patterns matched (content_catalog_licensing, playlist_library_curation); guideline priority rules select content_catalog_licensing.
+----------------------------------------------------------------------------------------------------
+
+ITEM 16/20
+Candidate ID: cand_0093
+Hard-case category: multi_intent
+Existing heuristic intent: playlist_library_curation
+
+Customer message:
+@SpotifyCares No. Just locally on my pc. Pressing the thingy left of the play/pause/nextsong buttons. The shuffle isnt purely random i reckon.
+
+Preceding conversation context:
+Customer: @115888 So, is there an actual shuffle function that is random? Pure random is what i need, for without i can't have a mix that is mixed.
+Brand: @352064 Hi Gustav! The cavalry's here. Just to check, are you using Spotify Connect when shuffling playlists? /AU
+
+Brand response:
+@352064 We’ve recently made some improvements to our shuffle algorithm. We’d love to hear your feedback here: https://t.co/T3vZnSL3od /AU
+
+Suggestion, not a human label:
+  Suggested primary intent: playlist_library_curation
+  Suggested secondary intent: playback_streaming_issue
+  Suggested ambiguous flag: True
+  Suggested multi-intent flag: True
+  Confidence: medium
+  Reasoning: Multiple taxonomy patterns matched (playback_streaming_issue, playlist_library_curation); guideline priority rules select playlist_library_curation.
+----------------------------------------------------------------------------------------------------
+
+ITEM 17/20
+Candidate ID: cand_0157
+Hard-case category: multi_intent
+Existing heuristic intent: content_catalog_licensing
+
+Customer message:
+@SpotifyCares Every song on said playlist is a different artist
+
+Preceding conversation context:
+Customer: @SpotifyCares Free-mium user here. Thank you for letting me put on a playlist and not hear a single song on that playlist even using skips.
+Brand: @517161 Hey Fred! Just to confirm are you getting songs that are not on your playlist? /JP
+Customer: @SpotifyCares That is correct - not one on the playlist
+Brand: @517161 2: more artists into your playlists. Hope this clears things up /AR
+
+Brand response:
+@517161 Hmm. Can you send us the URI of the playlist you're referring to? Just right-click the playlist &gt; Share &gt; URI &gt; Copy Spotify URI /AR
+
+Suggestion, not a human label:
+  Suggested primary intent: content_catalog_licensing
+  Suggested secondary intent: playlist_library_curation
+  Suggested ambiguous flag: True
+  Suggested multi-intent flag: True
+  Confidence: medium
+  Reasoning: Multiple taxonomy patterns matched (content_catalog_licensing, playlist_library_curation); guideline priority rules select content_catalog_licensing.
+----------------------------------------------------------------------------------------------------
+
+ITEM 18/20
+Candidate ID: cand_0218
+Hard-case category: multi_intent
+Existing heuristic intent: offline_downloads_issue
+
+Customer message:
+@SpotifyCares I also force closed the app, which stopped the download until I reopened the app again.
+
+Preceding conversation context:
+Customer: @SpotifyCares 45 songs just downloaded over cellular data. Couldn't stop them without airplane mode. Explain yourself.
+Brand: @615596 Hi Dewitt! What device (make &amp; model), operating system, and app version are you using? We'll keep an eye out for your reply /LP
+Customer: @SpotifyCares Samsung Galaxy S7
+Android 7.0 Nougat
+Spotify 8.4.22.857 armV7
+Brand: @615596 Got it. Can you check if Download using cellular is enabled under Your Library &gt; Settings &gt; Music Quality? We'll be right here waiting /LP
+
+Brand response:
+@615596 Hmm. Could you send us your account's username or email address via DM? We'll take a look backstage /LP https://t.co/ldFdZRiNAt
+
+Suggestion, not a human label:
+  Suggested primary intent: offline_downloads_issue
+  Suggested secondary intent: playback_streaming_issue
+  Suggested ambiguous flag: True
+  Suggested multi-intent flag: True
+  Confidence: medium
+  Reasoning: Multiple taxonomy patterns matched (playback_streaming_issue, offline_downloads_issue); guideline priority rules select offline_downloads_issue.
+----------------------------------------------------------------------------------------------------
+
+ITEM 19/20
+Candidate ID: cand_0230
+Hard-case category: multi_intent
+Existing heuristic intent: playlist_library_curation
+
+Customer message:
+@SpotifyCares Just updated Spotify and it will play 1 song on album shuffle and then just stop playing
+
+Preceding conversation context:
+Customer: Anybody else's Spotify app messing up? @115888
+Brand: @645011 Hey there! What's happening exactly? Can you let us know the device, operating system, and Spotify version you're using? /MA
+
+Brand response:
+@645011 That's not cool. Does logging out &gt; restarting the device &gt; logging back in help? Keep us posted /KL
+
+Suggestion, not a human label:
+  Suggested primary intent: playlist_library_curation
+  Suggested secondary intent: playback_streaming_issue
+  Suggested ambiguous flag: True
+  Suggested multi-intent flag: True
+  Confidence: medium
+  Reasoning: Multiple taxonomy patterns matched (playback_streaming_issue, playlist_library_curation); guideline priority rules select playlist_library_curation.
+----------------------------------------------------------------------------------------------------
+
+ITEM 20/20
+Candidate ID: cand_0022
+Hard-case category: context_dependent_followup
+Existing heuristic intent: offline_downloads_issue
+
+Customer message:
+@SpotifyCares It worked thank you🙏👌🏻
+
+Preceding conversation context:
+Customer: @SpotifyCares what does the Red Download sign mean
+Customer: @SpotifyCares Im on ios 10.0.2 on an iPhone 5s
+Brand: @182416 Got it! Are you getting any error messages? If you can send us a screenshot of what you're seeing, that'd be great /PL
+Customer: @SpotifyCares And in the Album
+Brand: @182416 Thanks! Can you check if restarting your router helps? Can you also try using a 3G/4G connection to see if it will do the same thing? /PL
+Customer: @SpotifyCares But is that the only Thing i Can do?
+Brand: @182416 Can you try logging out &gt; restarting the device &gt; logging back in? Let us know if it makes any difference /PL
+
+Brand response:
+@182416 Great! Glad to hear it's working. Just let us know if we can help with anything else. https://t.co/m4HWSbgHVZ /PL
+
+Suggestion, not a human label:
+  Suggested primary intent: other_miscellaneous
+  Suggested secondary intent: 
+  Suggested ambiguous flag: False
+  Suggested multi-intent flag: False
+  Confidence: low
+  Reasoning: No specific support-domain evidence matched; guidelines keep this as other_miscellaneous rather than inventing a label.
+----------------------------------------------------------------------------------------------------

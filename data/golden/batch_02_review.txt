@@ -1,0 +1,576 @@
+SpotifyCares Golden Candidate Batch 02 Review
+READ-ONLY REVIEW FILE - not annotation data
+Source: data/golden/golden_candidates.csv
+Candidates: 20
+====================================================================================================
+
+ITEM 1/20
+Candidate ID: cand_0045
+Risk score: 76
+Risk reasons: medium confidence; context-dependent follow-up; multi-intent; ambiguous/underspecified; difficult language/slang
+Hard-case category: normal
+Existing heuristic intent: content_catalog_licensing
+
+Customer message:
+@SpotifyCares BUT WHY YOU DIDN'T SIGN WITH THESE ARTIST THEY ARE GREAT AND I'M SURE THAT THEY WANT SING WITH YOU.
+Also, they have many fans.
+
+Preceding conversation context:
+Customer: @115888 can you add likey of @9977 , hellaveator of @25370 ,all of @248108 and @18284 ??? thanksssss 😘
+Brand: @249702 Hey there! Music availability all boils down to licensing agreements. We have more info here: https://t.co/2FJce6Rcpg. Let us know if you have any other questions /LM
+
+Brand response:
+@249702 We have no doubt about that. Don't worry, we’ll have them available to you as soon as they're available to us. Give us a shout if you need a hand with anything else /MG
+
+Suggestion, not a human label:
+  Suggested primary intent: content_catalog_licensing
+  Suggested secondary intent: other_miscellaneous
+  Suggested ambiguous flag: True
+  Suggested multi-intent flag: True
+  Confidence: medium
+  Reasoning: Multiple taxonomy patterns matched (content_catalog_licensing, other_miscellaneous); guideline priority rules select content_catalog_licensing.
+  Suggested notes: Brand response shown for reviewer orientation only.
+----------------------------------------------------------------------------------------------------
+
+ITEM 2/20
+Candidate ID: cand_0080
+Risk score: 76
+Risk reasons: medium confidence; context-dependent follow-up; multi-intent; ambiguous/underspecified; unusual case
+Hard-case category: context_dependent_followup
+Existing heuristic intent: playback_streaming_issue
+
+Customer message:
+@SpotifyCares  https://t.co/l2jLOMMBgU
+
+Preceding conversation context:
+Customer: Anyone else's Spotify randomly connect to the webplayer and play some random playlists you've never heard before? So odd. Had it 3 times now
+Brand: @328296 Hey there! What device, operating system, and Spotify version are you using? We'll see what we can suggest /NG
+Customer: @SpotifyCares Happened on both Android &amp; Windows Spotify - newest versions! Only started doing this few days ago and happened around 3 times
+Brand: @328296 Thanks. Just to check, are you getting any specific error messages? If so, a screenshot can be handy /NG
+Customer: @SpotifyCares Nope, just stops my song, connects to webplayer and plays some random stuff. Despacito was the latest one ahaha
+Brand: @328296 Got it. Can you head to your desktop app's Settings &gt; Startup and Window Behaviour and check if it's ticked or unticked? /NG
+
+Brand response:
+@328296 Can you try unticking the "Allow Spotify to be opened from the web"? Does that help? /NG
+
+Suggestion, not a human label:
+  Suggested primary intent: playback_streaming_issue
+  Suggested secondary intent: playlist_library_curation,app_technical_device,other_miscellaneous
+  Suggested ambiguous flag: True
+  Suggested multi-intent flag: True
+  Confidence: medium
+  Reasoning: Multiple taxonomy patterns matched (playback_streaming_issue, playlist_library_curation, app_technical_device, other_miscellaneous); guideline priority rules select playback_streaming_issue.
+  Suggested notes: Context used because the customer message alone was underspecified. Brand response shown for reviewer orientation only.
+----------------------------------------------------------------------------------------------------
+
+ITEM 3/20
+Candidate ID: cand_0084
+Risk score: 76
+Risk reasons: low confidence; context-dependent follow-up; ambiguous/underspecified; weak or conflicting evidence
+Hard-case category: context_dependent_followup
+Existing heuristic intent: unclear_insufficient_context
+
+Customer message:
+@SpotifyCares Windows 950xl phone.
+
+Preceding conversation context:
+Customer: Their UI sucks but their twitter team does not. https://t.co/YqHaQdoglr
+Brand: @325676 You're welcome! We don’t have any other info on this right now, but let us know if you need a hand with anything else /JX
+Customer: @SpotifyCares One layer of well-considered UI menus options would make things much easier.
+Brand: @325676 Just to clarify, What device are you using? We'll see what we can suggest /JX
+
+Brand response:
+@325676 3: Thank you for your suggestions! We can’t make any promises but we've got it noted and we’ll pass your it onto the right folks /JX
+
+Suggestion, not a human label:
+  Suggested primary intent: unclear_insufficient_context
+  Suggested secondary intent: 
+  Suggested ambiguous flag: True
+  Suggested multi-intent flag: False
+  Confidence: low
+  Reasoning: Customer message and available context lack enough diagnostic detail; guidelines route this to unclear_insufficient_context.
+  Suggested notes: Brand response shown for reviewer orientation only.
+----------------------------------------------------------------------------------------------------
+
+ITEM 4/20
+Candidate ID: cand_0085
+Risk score: 76
+Risk reasons: low confidence; context-dependent follow-up; heuristic/suggestion disagreement; weak or conflicting evidence
+Hard-case category: context_dependent_followup
+Existing heuristic intent: content_catalog_licensing
+
+Customer message:
+@SpotifyCares Thank you for reply!
+
+Preceding conversation context:
+Customer: @115888 why did you remove some of the phantom of the opera songs from the movie album... :( I need my wandering child .. :(
+Brand: @331185 Hey there. Sometimes content gets removed because of licensing changes. Hopefully we'll have it available again soon! /BH
+
+Brand response:
+@331185 You're welcome! If anything else comes up just give us a shout. We're here around the clock 🙂 /BH
+
+Suggestion, not a human label:
+  Suggested primary intent: other_miscellaneous
+  Suggested secondary intent: 
+  Suggested ambiguous flag: False
+  Suggested multi-intent flag: False
+  Confidence: low
+  Reasoning: No specific support-domain evidence matched; guidelines keep this as other_miscellaneous rather than inventing a label.
+  Suggested notes: Brand response shown for reviewer orientation only.
+----------------------------------------------------------------------------------------------------
+
+ITEM 5/20
+Candidate ID: cand_0095
+Risk score: 76
+Risk reasons: low confidence; context-dependent follow-up; ambiguous/underspecified; weak or conflicting evidence
+Hard-case category: context_dependent_followup
+Existing heuristic intent: unclear_insufficient_context
+
+Customer message:
+@115888 Linky no worky 😟
+
+Preceding conversation context:
+Customer: Keep the flow with ad-free music. Premium is just 99p for 3 months. https://t.co/zwM1HYBWMw
+
+Brand response:
+@272397 Hey Andy, that doesn't sound right! Can you send us a screenshot of any error messages you're getting? We'll see what we can suggest /JE
+
+Suggestion, not a human label:
+  Suggested primary intent: unclear_insufficient_context
+  Suggested secondary intent: 
+  Suggested ambiguous flag: True
+  Suggested multi-intent flag: False
+  Confidence: low
+  Reasoning: Customer message and available context lack enough diagnostic detail; guidelines route this to unclear_insufficient_context.
+  Suggested notes: Brand response shown for reviewer orientation only.
+----------------------------------------------------------------------------------------------------
+
+ITEM 6/20
+Candidate ID: cand_0109
+Risk score: 76
+Risk reasons: low confidence; context-dependent follow-up; heuristic/suggestion disagreement; weak or conflicting evidence
+Hard-case category: context_dependent_followup
+Existing heuristic intent: unclear_insufficient_context
+
+Customer message:
+@SpotifyCares I love you, stay golden.
+
+Preceding conversation context:
+Customer: @115888 when will be able to sort our music by genre?
+Customer: @115888 would be super dope to be able to group them by genre and then by subgenre
+Brand: @380272 Hey! We can see how that’d be handy. Thanks for taking the time to reach out – your feedback's been noted 📝 /NQ
+
+Brand response:
+@380272 Sweet! Just let us know if we can help with anything else. https://t.co/Rkb5PJblbW 💚 /NQ
+
+Suggestion, not a human label:
+  Suggested primary intent: other_miscellaneous
+  Suggested secondary intent: 
+  Suggested ambiguous flag: False
+  Suggested multi-intent flag: False
+  Confidence: low
+  Reasoning: No specific support-domain evidence matched; guidelines keep this as other_miscellaneous rather than inventing a label.
+  Suggested notes: Brand response shown for reviewer orientation only.
+----------------------------------------------------------------------------------------------------
+
+ITEM 7/20
+Candidate ID: cand_0121
+Risk score: 76
+Risk reasons: low confidence; context-dependent follow-up; heuristic/suggestion disagreement; weak or conflicting evidence
+Hard-case category: normal
+Existing heuristic intent: account_access_credentials
+
+Customer message:
+@SpotifyCares thanks, i connected through the form. seems like iTunes is the culprit, and I'm just getting lumped into their restrictions, not Spotify's
+
+Preceding conversation context:
+Customer: 😬me and my bandmates' song titles have forever been in the format 321PHLOOB num+letters. Store reject policy is inconsistent. what's yours? https://t.co/zowsXVQPeO
+Customer: @5634 @1123 @137960 @76952 @76953 @410647 @159550 @125633 @115888 @SpotifyCares is this relevant to your interest? Are these track names that are already on your app going to be rejected later on?
+Brand: @372879 Hey! You can contact our Artist team here: https://t.co/p1wbtdELHu! If you've reached out, DM us your email address &amp; we'll chase it up /K https://t.co/ldFdZRiNAt
+
+Brand response:
+@372879 We hear you! Can you let us know the email address you used to contact Artist Services? We'll take a look backstage /KP
+
+Suggestion, not a human label:
+  Suggested primary intent: other_miscellaneous
+  Suggested secondary intent: 
+  Suggested ambiguous flag: False
+  Suggested multi-intent flag: False
+  Confidence: low
+  Reasoning: No specific support-domain evidence matched; guidelines keep this as other_miscellaneous rather than inventing a label.
+  Suggested notes: Brand response shown for reviewer orientation only.
+----------------------------------------------------------------------------------------------------
+
+ITEM 8/20
+Candidate ID: cand_0152
+Risk score: 76
+Risk reasons: low confidence; context-dependent follow-up; heuristic/suggestion disagreement; weak or conflicting evidence
+Hard-case category: context_dependent_followup
+Existing heuristic intent: unclear_insufficient_context
+
+Customer message:
+@SpotifyCares Boom. Fixed. Thank you!
+
+Preceding conversation context:
+Customer: Ready to delete my @115888 if there isn’t a way to turn off this wave notification..
+Brand: @505168 Hey John! Just to check, could you let us know more on the wave notification? A screenshot of it would come in handy too /MT
+Customer: @SpotifyCares Thanks! It’s waze (autocorrect to wave) happens when I start my car and open up the Spotify app. Will follow up with a screen cap ASAP.
+Brand: @505168 Sure thing! We'll be on the lookout for your reply /MT
+Customer: @SpotifyCares It never goes away. @SpotifyCares https://t.co/gbZxy6a9eT
+Brand: @505168 Thanks. Can you check if your Waze integration setting is turned off? Just head to Settings &gt; Social &gt; Waze Navigation /JE
+
+Brand response:
+@505168 You're welcome! If you ever need anything else, just shout and we'll come running 🏃 /JX
+
+Suggestion, not a human label:
+  Suggested primary intent: other_miscellaneous
+  Suggested secondary intent: 
+  Suggested ambiguous flag: False
+  Suggested multi-intent flag: False
+  Confidence: low
+  Reasoning: No specific support-domain evidence matched; guidelines keep this as other_miscellaneous rather than inventing a label.
+  Suggested notes: Brand response shown for reviewer orientation only.
+----------------------------------------------------------------------------------------------------
+
+ITEM 9/20
+Candidate ID: cand_0195
+Risk score: 76
+Risk reasons: low confidence; context-dependent follow-up; ambiguous/underspecified; weak or conflicting evidence
+Hard-case category: context_dependent_followup
+Existing heuristic intent: unclear_insufficient_context
+
+Customer message:
+@SpotifyCares 8.4.24.506 and iOS 11.0.3
+
+Preceding conversation context:
+Customer: @115888 any reason as to why my songs aren’t showing up on the lock screen? Or in my control centre?
+Brand: @580640 Hey there! What device, operating system, and Spotify version are you using? We'll see what we can suggest /NG
+Customer: @SpotifyCares On iPhone 6S and Spotify Premium!
+Brand: @580640 2: and head to Settings &gt; About. As for the iOS, open Settings &gt; General &gt; About /NG
+
+Brand response:
+@580640 Got it. Does logging out then back in make any difference? Restarting your device might help too /NG
+
+Suggestion, not a human label:
+  Suggested primary intent: unclear_insufficient_context
+  Suggested secondary intent: 
+  Suggested ambiguous flag: True
+  Suggested multi-intent flag: False
+  Confidence: low
+  Reasoning: Customer message and available context lack enough diagnostic detail; guidelines route this to unclear_insufficient_context.
+  Suggested notes: Brand response shown for reviewer orientation only.
+----------------------------------------------------------------------------------------------------
+
+ITEM 10/20
+Candidate ID: cand_0243
+Risk score: 76
+Risk reasons: low confidence; context-dependent follow-up; ambiguous/underspecified; weak or conflicting evidence
+Hard-case category: context_dependent_followup
+Existing heuristic intent: unclear_insufficient_context
+
+Customer message:
+@SpotifyCares Alrighty then 🙂
+
+Preceding conversation context:
+Customer: Why isn’t So High by @90534 on @115888 🤔🤔
+Brand: @667063 Hey there. We’ll have it available to you as soon as it’s available to us! https://t.co/0i8GpimuDa /TC
+Customer: @SpotifyCares But you have G-Wagon and not So High woooowww
+Brand: @667063 We hear you 🎧 Rest assured your feedback will be passed on to the right folks /DF
+
+Brand response:
+@667063 Awesome! If you ever need anything else, just shout and we'll come running 🏃 /DF
+
+Suggestion, not a human label:
+  Suggested primary intent: unclear_insufficient_context
+  Suggested secondary intent: 
+  Suggested ambiguous flag: True
+  Suggested multi-intent flag: False
+  Confidence: low
+  Reasoning: Customer message and available context lack enough diagnostic detail; guidelines route this to unclear_insufficient_context.
+  Suggested notes: Brand response shown for reviewer orientation only.
+----------------------------------------------------------------------------------------------------
+
+ITEM 11/20
+Candidate ID: cand_0282
+Risk score: 76
+Risk reasons: low confidence; context-dependent follow-up; heuristic/suggestion disagreement; weak or conflicting evidence
+Hard-case category: context_dependent_followup
+Existing heuristic intent: unclear_insufficient_context
+
+Customer message:
+@SpotifyCares Thanks. I appreciate the reply.
+
+Preceding conversation context:
+Customer: When are we getting podcast stats @115888?
+Brand: @735201 Hey there! We're afraid we don't have any info on this, but we'll pass your feedback on to the relevant folks /GS
+
+Brand response:
+@735201 No worries. If you have other questions, or if you need help with anything else, just give us a shout. https://t.co/m4HWSbgHVZ /GS
+
+Suggestion, not a human label:
+  Suggested primary intent: other_miscellaneous
+  Suggested secondary intent: 
+  Suggested ambiguous flag: False
+  Suggested multi-intent flag: False
+  Confidence: low
+  Reasoning: No specific support-domain evidence matched; guidelines keep this as other_miscellaneous rather than inventing a label.
+  Suggested notes: Brand response shown for reviewer orientation only.
+----------------------------------------------------------------------------------------------------
+
+ITEM 12/20
+Candidate ID: cand_0290
+Risk score: 76
+Risk reasons: low confidence; context-dependent follow-up; heuristic/suggestion disagreement; weak or conflicting evidence
+Hard-case category: context_dependent_followup
+Existing heuristic intent: playback_streaming_issue
+
+Customer message:
+@SpotifyCares Perfect! Thanks anyway guys ❤️
+
+Preceding conversation context:
+Customer: @SpotifyCares Hi, i’m on xbox one and my app tells me my song is playing, i can see the bar moving but there’s no sound?
+Brand: @741855 Hey there! Can you try a hard restart of the console (hold the power button for 10 seconds)? Does that make a difference? /AR
+
+Brand response:
+@741855 You're welcome! If you ever need us again, just give us a... https://t.co/AUc7DGJpgF 🙂 /AR
+
+Suggestion, not a human label:
+  Suggested primary intent: other_miscellaneous
+  Suggested secondary intent: 
+  Suggested ambiguous flag: False
+  Suggested multi-intent flag: False
+  Confidence: low
+  Reasoning: No specific support-domain evidence matched; guidelines keep this as other_miscellaneous rather than inventing a label.
+  Suggested notes: Brand response shown for reviewer orientation only.
+----------------------------------------------------------------------------------------------------
+
+ITEM 13/20
+Candidate ID: cand_0309
+Risk score: 76
+Risk reasons: low confidence; context-dependent follow-up; heuristic/suggestion disagreement; weak or conflicting evidence
+Hard-case category: normal
+Existing heuristic intent: offline_downloads_issue
+
+Customer message:
+@SpotifyCares Moto G4 plus, Android 7 and Spotify version 8.4.28.875 arm v7. I just try anything what I could find from support sites and nothing worked. Thanks in advance
+
+Preceding conversation context:
+Customer: #Spotify @115888 I would like to use my SD card as storage, but couldn't see in the seetings the storage. I really think about to quit my Spotify membership.
+Brand: @794177 Hi there! Can you let us know the device, OS, and Spotify version you're running? We'll see what we can suggest /DB
+
+Brand response:
+@794177 Got it. Can you also DM us your account's email address or username? We'll take a look backstage /MT https://t.co/ldFdZRiNAt
+
+Suggestion, not a human label:
+  Suggested primary intent: other_miscellaneous
+  Suggested secondary intent: 
+  Suggested ambiguous flag: False
+  Suggested multi-intent flag: False
+  Confidence: low
+  Reasoning: No specific support-domain evidence matched; guidelines keep this as other_miscellaneous rather than inventing a label.
+  Suggested notes: Brand response shown for reviewer orientation only.
+----------------------------------------------------------------------------------------------------
+
+ITEM 14/20
+Candidate ID: cand_0011
+Risk score: 68
+Risk reasons: medium confidence; context-dependent follow-up; multi-intent; ambiguous/underspecified
+Hard-case category: context_dependent_followup
+Existing heuristic intent: playlist_library_curation
+
+Customer message:
+@SpotifyCares Android 7.1.1 Spotify 8.4.28.875
+
+Preceding conversation context:
+Customer: @115888 will you optimise spotify for galaxy note 8?
+And since I'm coming from iOS, can't you add gestures for "queue" and "add to my songs," it's really useful
+Brand: @141622 Hey there! Thanks for the feedback. We'll make sure to pass your suggestion about the gestures on to the right folks. Are you having issues using Spotify on your Galaxy Note 8? /PC
+Customer: @SpotifyCares It's just not optimised for the aspect ratio of the phone
+Brand: @141622 Hmm. Can you send us your Android and Spotify app versions? We'll see what we can suggest /PC
+
+Brand response:
+@141622 Thanks. Can you send us a screenshot of what you see? We'll check it out /NY
+
+Suggestion, not a human label:
+  Suggested primary intent: playlist_library_curation
+  Suggested secondary intent: other_miscellaneous
+  Suggested ambiguous flag: True
+  Suggested multi-intent flag: True
+  Confidence: medium
+  Reasoning: Multiple taxonomy patterns matched (playlist_library_curation, other_miscellaneous); guideline priority rules select playlist_library_curation.
+  Suggested notes: Context used because the customer message alone was underspecified. Brand response shown for reviewer orientation only.
+----------------------------------------------------------------------------------------------------
+
+ITEM 15/20
+Candidate ID: cand_0012
+Risk score: 68
+Risk reasons: medium confidence; multi-intent; ambiguous/underspecified; weak or conflicting evidence; difficult language/slang
+Hard-case category: multi_intent
+Existing heuristic intent: offline_downloads_issue
+
+Customer message:
+@spotifycares it's 2017 why do I have a 3333 offline song limit on my spotify? Do you really want @GooglePlayMusic to get that 9.99 a month off me? Ps pls emulate their local files synching.
+
+Preceding conversation context:
+[none]
+
+Brand response:
+@144986 Hey Ben! Right now, there's a download limit of 3,333 tracks on 3 separate devices. We have more info here: https://t.co/WDXVuJV0dh /NS
+
+Suggestion, not a human label:
+  Suggested primary intent: offline_downloads_issue
+  Suggested secondary intent: playlist_library_curation
+  Suggested ambiguous flag: True
+  Suggested multi-intent flag: True
+  Confidence: medium
+  Reasoning: Multiple taxonomy patterns matched (offline_downloads_issue, playlist_library_curation); guideline priority rules select offline_downloads_issue.
+  Suggested notes: Brand response shown for reviewer orientation only.
+----------------------------------------------------------------------------------------------------
+
+ITEM 16/20
+Candidate ID: cand_0018
+Risk score: 68
+Risk reasons: medium confidence; multi-intent; ambiguous/underspecified; weak or conflicting evidence; difficult language/slang
+Hard-case category: multi_intent
+Existing heuristic intent: offline_downloads_issue
+
+Customer message:
+@SpotifyCares @115888 @127637 all my saved and downloaded songs suddenly disappeared whyyy??? Good thing my playlists are still good
+
+Preceding conversation context:
+[none]
+
+Brand response:
+@169999 1. Hey Chantal! Head over here to know more about why this could've happened and which steps to take next: https://t.co/XpxqnLhytY.
+
+Suggestion, not a human label:
+  Suggested primary intent: offline_downloads_issue
+  Suggested secondary intent: playlist_library_curation
+  Suggested ambiguous flag: True
+  Suggested multi-intent flag: True
+  Confidence: medium
+  Reasoning: Multiple taxonomy patterns matched (offline_downloads_issue, playlist_library_curation); guideline priority rules select offline_downloads_issue.
+  Suggested notes: Brand response shown for reviewer orientation only.
+----------------------------------------------------------------------------------------------------
+
+ITEM 17/20
+Candidate ID: cand_0020
+Risk score: 68
+Risk reasons: medium confidence; context-dependent follow-up; multi-intent; ambiguous/underspecified
+Hard-case category: normal
+Existing heuristic intent: content_catalog_licensing
+
+Customer message:
+@SpotifyCares I am having a similar issue. When I paste my bio it isn't showing up. It is also not letting me paste my wiki link.
+
+Preceding conversation context:
+Customer: Great news: You can now edit your artist bio on Spotify! Learn more here: https://t.co/IpYag6Y4RH https://t.co/u2eZp4OgDv
+Customer: @125633 I'm not able to click in the box to type to add my bio?!?!?! Has anyone else had this problem?
+Brand: @177342 Hi Mali, help's here! What device are you trying to edit your artist bio from? Have you tried an incognito window or different browser? /T
+
+Brand response:
+@177341 2: You might also want to try using an incognito window. Let us know how it goes /MQ
+
+Suggestion, not a human label:
+  Suggested primary intent: content_catalog_licensing
+  Suggested secondary intent: other_miscellaneous
+  Suggested ambiguous flag: True
+  Suggested multi-intent flag: True
+  Confidence: medium
+  Reasoning: Multiple taxonomy patterns matched (content_catalog_licensing, other_miscellaneous); guideline priority rules select content_catalog_licensing.
+  Suggested notes: Context used because the customer message alone was underspecified. Brand response shown for reviewer orientation only.
+----------------------------------------------------------------------------------------------------
+
+ITEM 18/20
+Candidate ID: cand_0021
+Risk score: 68
+Risk reasons: medium confidence; context-dependent follow-up; multi-intent; ambiguous/underspecified
+Hard-case category: normal
+Existing heuristic intent: content_catalog_licensing
+
+Customer message:
+@SpotifyCares @178316 the correct artists on the song would be @178316 (https://t.co/ut7LdsbV31) and me (https://t.co/AeaVD76eKj). Mine seems to be correct.
+
+Preceding conversation context:
+Customer: This is not ok. i am beyond pissed. https://t.co/Arr2BNcsN3
+Customer: @178316 @SpotifyCares please fix? =)
+Brand: @178315 Hey there! We'd love to help. Can you let us know what's happening exactly? /RC
+Customer: @SpotifyCares I recently asked to have my multiple accounts merged. This song was one of the ones being 'moved', and I'm not sure if this is connected 1/2
+Customer: @SpotifyCares But the original artist is this @178316 ,and the song is now under a different Sekai. Even though it was originally under the right one.
+
+Brand response:
+@178315 Got it. We'll get this reported. Great detective work! https://t.co/LpsmyUtme0 /RC
+
+Suggestion, not a human label:
+  Suggested primary intent: content_catalog_licensing
+  Suggested secondary intent: other_miscellaneous
+  Suggested ambiguous flag: True
+  Suggested multi-intent flag: True
+  Confidence: medium
+  Reasoning: Multiple taxonomy patterns matched (content_catalog_licensing, other_miscellaneous); guideline priority rules select content_catalog_licensing.
+  Suggested notes: Context used because the customer message alone was underspecified. Brand response shown for reviewer orientation only.
+----------------------------------------------------------------------------------------------------
+
+ITEM 19/20
+Candidate ID: cand_0032
+Risk score: 68
+Risk reasons: medium confidence; context-dependent follow-up; multi-intent; ambiguous/underspecified
+Hard-case category: context_dependent_followup
+Existing heuristic intent: offline_downloads_issue
+
+Customer message:
+@SpotifyCares Just sent you a DM
+
+Preceding conversation context:
+Customer: @SpotifyCares Hi I was wondering when the Recently Played Artists section is going to be fixed? Mine hasn’t updated in months, many thanks
+Brand: @209815 Hey Alex, help's here. Can you let us know the device, OS, and Spotify version you're using? We'll see what we can suggest /KL
+Customer: @SpotifyCares I’m using a MacBook Air, macOS Sierra (10.12.6) &amp; the latest version of Spotify (1.0.65.320). I’ve tried clearing the storage cache as well.
+Brand: @209815 Thanks! Is this happening while connected to WiFi, 3G/4G or both? /KL
+Customer: @SpotifyCares I’m just on WiFi.
+Brand: @209815 Got it. Have you tried connecting to another network? Keep us in the loop /KL
+Customer: @SpotifyCares I’m at uni right now, so I’m with their ISP, it’s been the same back home with my ISP, so yes I’ve been on different networks.
+Brand: @209815 Okay! Does logging out &gt; restarting the device &gt; logging back in help? Keep us posted /KL
+Customer: @SpotifyCares It doesn’t no, I don’t think it’s an issue with my computer. I’ve seen online that other people’s recently played doesn’t update as well.
+Brand: @209815 That's odd. Just to be sure, are you usually on Private Session? If so, this might be the reason why it hasn't updated /KL
+Customer: @SpotifyCares No I don’t use a private session, I think it’s not updating with a server or something, that’s why there’s artists I don’t listen to on it.
+Brand: @209815 Can you DM us your account's username and email address? We'll take a look backstage /KL https://t.co/ldFdZRiNAt
+
+Brand response:
+@209815 Hey Alex! We've just sent you a DM. Let's carry on chatting there 🙂 /KL
+
+Suggestion, not a human label:
+  Suggested primary intent: offline_downloads_issue
+  Suggested secondary intent: account_access_credentials,app_technical_device,other_miscellaneous
+  Suggested ambiguous flag: True
+  Suggested multi-intent flag: True
+  Confidence: medium
+  Reasoning: Multiple taxonomy patterns matched (offline_downloads_issue, account_access_credentials, app_technical_device, other_miscellaneous); guideline priority rules select offline_downloads_issue.
+  Suggested notes: Context used because the customer message alone was underspecified. Brand response shown for reviewer orientation only.
+----------------------------------------------------------------------------------------------------
+
+ITEM 20/20
+Candidate ID: cand_0150
+Risk score: 68
+Risk reasons: medium confidence; context-dependent follow-up; multi-intent; ambiguous/underspecified
+Hard-case category: normal
+Existing heuristic intent: playlist_library_curation
+
+Customer message:
+@SpotifyCares I'm on an iPhone 6s and using Spotify free, would being on Spotify free affect it?
+
+Preceding conversation context:
+Customer: @SpotifyCares I've turned off auto play &amp; still being played songs not on my playlist, how do I fix this. Thanks 🌸
+Brand: @490197 Hey there! What device are you currently using? Are you rocking Spotify Free or Premium? /MV
+
+Brand response:
+@490197 We're afraid so. Looks like you're getting Suggested Tracks. They're part of our Free service on mobile. https://t.co/Uv9kyGcsCc /MV
+
+Suggestion, not a human label:
+  Suggested primary intent: playlist_library_curation
+  Suggested secondary intent: other_miscellaneous
+  Suggested ambiguous flag: True
+  Suggested multi-intent flag: True
+  Confidence: medium
+  Reasoning: Multiple taxonomy patterns matched (playlist_library_curation, other_miscellaneous); guideline priority rules select playlist_library_curation.
+  Suggested notes: Context used because the customer message alone was underspecified. Brand response shown for reviewer orientation only.
+----------------------------------------------------------------------------------------------------
