@@ -1,0 +1,8 @@
+# Hiver — minimum runtime dependencies (verified with Python 3.14).
+# No `openai` package required: LLM calls use stdlib urllib (see src/judge.py).
+pandas==3.0.1
+numpy==2.5.1
+pyarrow==25.0.1
+scikit-learn==1.9.0
+scipy==1.18.0
+pytest==9.1.1

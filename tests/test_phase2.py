@@ -316,6 +316,7 @@ EXPECTED_INTENTS = {
     "plan_management_discount", "content_catalog_licensing",
     "playlist_library_curation", "app_technical_device",
     "unclear_insufficient_context",
+    "other_miscellaneous",
 }
 
 

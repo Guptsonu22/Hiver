@@ -14,6 +14,30 @@ import pandas as pd
 
 sys.stdout.reconfigure(encoding='utf-8')
 
+# Columns that must hold string/object values for human annotation.
+# Explicit coercion prevents pandas 3.x from inferring blank columns as float64,
+# which would otherwise raise TypeError when a string intent value is assigned
+# via df.at[idx, "human_primary_intent"].
+HUMAN_ANNOTATION_COLUMNS = [
+    "human_primary_intent",
+    "human_secondary_intents",
+    "human_is_ambiguous",
+    "human_is_multi_intent",
+    "human_notes",
+    "annotation_status",
+]
+
+
+def coerce_annotation_columns(df: pd.DataFrame) -> pd.DataFrame:
+    """Force every human‑annotation column to `object` dtype so that string
+    labels can be assigned without a pandas 3.x float64 dtype error."""
+    for col in HUMAN_ANNOTATION_COLUMNS:
+        if col not in df.columns:
+            df[col] = pd.Series(dtype="object")
+        else:
+            df[col] = df[col].astype("object")
+    return df
+
 CANDIDATES_CSV = "data/golden/golden_candidates.csv"
 
 INTENTS = [
@@ -52,6 +76,10 @@ def main():
         return
 
     df = pd.read_csv(CANDIDATES_CSV)
+    # Ensure all human-annotation columns are object-compatible so that
+    # string values (e.g. an intent name) can be assigned via df.at[]
+    # without raising TypeError in pandas 3.x.
+    df = coerce_annotation_columns(df)
 
     pending_mask = df["annotation_status"] != "reviewed"
     pending_indices = df[pending_mask].index.tolist()

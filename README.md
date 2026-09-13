@@ -148,3 +148,82 @@ python -m pytest tests/test_phase2.py -v
 * `src/data/` — Core modules for loading, conversation tree reconstruction, and response classification.
 * `src/intents/taxonomy.py` — Taxonomy definitions, regex patterns, and tie-breaking priority rules.
 * `tests/test_phase2.py` — Pytest suite (**72/72 tests passing**).
+
+---
+
+## Phase 4: LLM-as-Judge Reply Quality + Human Agreement (scaffolding complete, calibration pending)
+
+Phase 3 reply metrics (length / non-empty rate) cannot judge usefulness or
+grounding. Phase 4 adds semantic reply-quality evaluation with a rigorous,
+reproducible LLM-judge + human-agreement protocol. Full rubric:
+`docs/judge_rubric.md`.
+
+* **Population:** strictly the 150 reviewed golden examples (172 pending never
+  evaluated). Full judge inputs: 300 rows (150 × 2 baselines) in
+  `data/judge/judge_inputs_full150.jsonl`, each with `generated_reply`,
+  `retrieval_source_pair_id`, and `retrieved_historical_response` from the
+  leakage-free 42,770-pair pool (asserted disjoint from the 322 golden IDs).
+* **Rubric v1 (0–3):** relevance, helpfulness, groundedness, appropriateness
+  (0=poor…3=strong); unsupported_claims INVERTED (0=clean/best…3=fabricated/worst);
+  plus overall_score, confidence, concise evidence-based reason.
+* **Calibration:** deterministic 50-example subset (seed 42) →
+  `data/judge/human_calibration.csv` (100 rows, currently all `pending`, scores
+  EMPTY — awaiting genuine human review via
+  `scripts/annotate_judge_calibration.py`).
+* **Judge:** `src/judge.py` (schema-validated JSON, env-configured
+  `JUDGE_MODEL`, fail-closed without `OPENAI_API_KEY`, cached outputs in
+  `results/judge_outputs.jsonl`); runner `scripts/run_judge.py` enforces
+  calibration-first ordering and writes `results/judge_metrics.json`
+  (agreement: exact rate + linear-weighted kappa; per-baseline means).
+* **Status:** implementation + judge/agent/annotator unit tests done (full suite 171 passed,
+  1 skipped); calibration 0/100 (one unverifiable row reset to pending for integrity);
+  NO human labels / judge scores / agreement numbers fabricated —
+  `results/judge_metrics.json` will be generated only after real annotation +
+  real API calls.
+
+---
+
+## Reproducibility (setup → headline results)
+
+**Setup (Windows PowerShell):**
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt  # pandas, numpy, pyarrow, scikit-learn, scipy, pytest
+```
+`python` alone may resolve to an interpreter without dependencies — always use
+`.\.venv\Scripts\python.exe`. No `openai` package needed (LLM calls use stdlib `urllib`).
+
+**Commands:**
+```powershell
+.\.venv\Scripts\python.exe -m pytest -q                          # full suite (expect 171 passed, 1 skipped)
+.\.venv\Scripts\python.exe scripts/build_judge_inputs.py         # 300 judge inputs + 50-ex calibration + 100-row template
+.\.venv\Scripts\python.exe scripts/annotate_judge_calibration.py # human calibration (100 rows; --status to check; --suggest optional, needs key)
+.\.venv\Scripts\python.exe scripts/generate_machine_calibration.py # MACHINE diagnostic only (never human labels; see docs/machine_calibration.md)
+.\.venv\Scripts\python.exe scripts/run_judge.py                  # LLM judge → agreement + results/judge_metrics.json (needs 100/100 + key)
+.\.venv\Scripts\python.exe scripts/run_judge.py --machine-calibration # machine diagnostic → results/machine_metrics.json (no agreement)
+.\.venv\Scripts\python.exe scripts/evaluate_agent.py             # agent on 150 → results/agent_metrics.json (+ --judge after calibration)
+.\.venv\Scripts\python.exe scripts/analyze_failures.py --top 5   # confusion pairs, weak-evidence cases, escalation reasons
+```
+
+**Expected artifacts:** `results/baseline_metrics.json`, `results/agent_metrics.json`,
+`results/agent_outputs.jsonl`, `results/judge_metrics.json` + `results/judge_outputs.jsonl`
+(after genuine human calibration + judge run); machine-diagnostic only:
+`data/judge/machine_calibration_100.csv` + `results/machine_metrics.json` (NOT human
+labels, NO agreement — see `docs/machine_calibration.md`);
+`data/judge/{judge_inputs_full150.jsonl, calibration_sample.csv,
+human_calibration.csv}`; docs: `judge_rubric.md`, `failure_modes.md`, `decision_log.md`
+(D13–D25), `final_report.md` (15 sections).
+
+**API configuration:** set a freshly rotated `OPENAI_API_KEY` in the environment
+(optional `JUDGE_MODEL`, default `gpt-4o-mini`); never commit secrets (`.env`/`.env.*`/
+`credentials.json` are git-ignored; `.env.example` is a blank template). Without a key
+every LLM step fails closed with an actionable message.
+
+**Calibration → judge workflow:** annotate 100/100 rows (scores 0–3, `unsupported_claims`
+inverted; fast path: `annotate_judge_calibration.py --fast` shows one labeled AI
+suggestion per row for explicit `y` (confirm) / `e` (edit) / `n` (manual) / `q` (quit) —
+Enter alone never confirms; suggestions cached in `data/judge/suggestion_cache.jsonl`;
+provenance per row in `ai_suggestion_shown`/`human_confirmed`/`human_edited`/
+`annotation_mode`) → `run_judge.py` validates (100/100, ⊂ reviewed 150, ∩ pending =
+∅, evidence ∩ 322 golden = ∅) → judges calibration (agreement: exact + linear-weighted
+kappa) → judges full 150×2 → `evaluate_agent.py --judge` adds agent reply quality.

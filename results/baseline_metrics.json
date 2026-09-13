@@ -1,0 +1,444 @@
+{
+  "dataset": {
+    "raw_spotify_pairs_count": 43092,
+    "golden_total": 322,
+    "golden_reviewed": 150,
+    "golden_pending": 172,
+    "evaluation_test_count": 150,
+    "training_retrieval_count": 42770,
+    "golden_pair_ids_matched": 322,
+    "golden_pair_ids_unmatched": 0,
+    "overlap_before_exclusion": 322,
+    "overlap_after_exclusion": 0,
+    "identifier_strategy": "Canonical pair_id string match (e.g. pair_43459_43458)",
+    "leakage_assertion_result": "PASSED (0 golden pairs in training/retrieval pool)",
+    "evaluation_population": "Strictly the 150 human-reviewed golden candidates; 172 pending excluded."
+  },
+  "baselines": {
+    "MostFrequentBaseline": {
+      "methodology": "Majority intent from heuristic training pool distribution; constant prediction.",
+      "majority_intent": "other_miscellaneous",
+      "intent_classification": {
+        "accuracy": 0.0467,
+        "macro_f1": 0.0089,
+        "per_class": {
+          "playback_streaming_issue": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 21
+          },
+          "offline_downloads_issue": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 16
+          },
+          "account_access_credentials": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 14
+          },
+          "billing_subscription_payment": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 13
+          },
+          "plan_management_discount": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 17
+          },
+          "content_catalog_licensing": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 21
+          },
+          "playlist_library_curation": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 19
+          },
+          "app_technical_device": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 13
+          },
+          "unclear_insufficient_context": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 9
+          },
+          "other_miscellaneous": {
+            "precision": 0.0467,
+            "recall": 1.0,
+            "f1": 0.0892,
+            "support": 7
+          }
+        },
+        "confusion_matrix": {
+          "playback_streaming_issue": {
+            "playback_streaming_issue": 0,
+            "offline_downloads_issue": 0,
+            "account_access_credentials": 0,
+            "billing_subscription_payment": 0,
+            "plan_management_discount": 0,
+            "content_catalog_licensing": 0,
+            "playlist_library_curation": 0,
+            "app_technical_device": 0,
+            "unclear_insufficient_context": 0,
+            "other_miscellaneous": 21
+          },
+          "offline_downloads_issue": {
+            "playback_streaming_issue": 0,
+            "offline_downloads_issue": 0,
+            "account_access_credentials": 0,
+            "billing_subscription_payment": 0,
+            "plan_management_discount": 0,
+            "content_catalog_licensing": 0,
+            "playlist_library_curation": 0,
+            "app_technical_device": 0,
+            "unclear_insufficient_context": 0,
+            "other_miscellaneous": 16
+          },
+          "account_access_credentials": {
+            "playback_streaming_issue": 0,
+            "offline_downloads_issue": 0,
+            "account_access_credentials": 0,
+            "billing_subscription_payment": 0,
+            "plan_management_discount": 0,
+            "content_catalog_licensing": 0,
+            "playlist_library_curation": 0,
+            "app_technical_device": 0,
+            "unclear_insufficient_context": 0,
+            "other_miscellaneous": 14
+          },
+          "billing_subscription_payment": {
+            "playback_streaming_issue": 0,
+            "offline_downloads_issue": 0,
+            "account_access_credentials": 0,
+            "billing_subscription_payment": 0,
+            "plan_management_discount": 0,
+            "content_catalog_licensing": 0,
+            "playlist_library_curation": 0,
+            "app_technical_device": 0,
+            "unclear_insufficient_context": 0,
+            "other_miscellaneous": 13
+          },
+          "plan_management_discount": {
+            "playback_streaming_issue": 0,
+            "offline_downloads_issue": 0,
+            "account_access_credentials": 0,
+            "billing_subscription_payment": 0,
+            "plan_management_discount": 0,
+            "content_catalog_licensing": 0,
+            "playlist_library_curation": 0,
+            "app_technical_device": 0,
+            "unclear_insufficient_context": 0,
+            "other_miscellaneous": 17
+          },
+          "content_catalog_licensing": {
+            "playback_streaming_issue": 0,
+            "offline_downloads_issue": 0,
+            "account_access_credentials": 0,
+            "billing_subscription_payment": 0,
+            "plan_management_discount": 0,
+            "content_catalog_licensing": 0,
+            "playlist_library_curation": 0,
+            "app_technical_device": 0,
+            "unclear_insufficient_context": 0,
+            "other_miscellaneous": 21
+          },
+          "playlist_library_curation": {
+            "playback_streaming_issue": 0,
+            "offline_downloads_issue": 0,
+            "account_access_credentials": 0,
+            "billing_subscription_payment": 0,
+            "plan_management_discount": 0,
+            "content_catalog_licensing": 0,
+            "playlist_library_curation": 0,
+            "app_technical_device": 0,
+            "unclear_insufficient_context": 0,
+            "other_miscellaneous": 19
+          },
+          "app_technical_device": {
+            "playback_streaming_issue": 0,
+            "offline_downloads_issue": 0,
+            "account_access_credentials": 0,
+            "billing_subscription_payment": 0,
+            "plan_management_discount": 0,
+            "content_catalog_licensing": 0,
+            "playlist_library_curation": 0,
+            "app_technical_device": 0,
+            "unclear_insufficient_context": 0,
+            "other_miscellaneous": 13
+          },
+          "unclear_insufficient_context": {
+            "playback_streaming_issue": 0,
+            "offline_downloads_issue": 0,
+            "account_access_credentials": 0,
+            "billing_subscription_payment": 0,
+            "plan_management_discount": 0,
+            "content_catalog_licensing": 0,
+            "playlist_library_curation": 0,
+            "app_technical_device": 0,
+            "unclear_insufficient_context": 0,
+            "other_miscellaneous": 9
+          },
+          "other_miscellaneous": {
+            "playback_streaming_issue": 0,
+            "offline_downloads_issue": 0,
+            "account_access_credentials": 0,
+            "billing_subscription_payment": 0,
+            "plan_management_discount": 0,
+            "content_catalog_licensing": 0,
+            "playlist_library_curation": 0,
+            "app_technical_device": 0,
+            "unclear_insufficient_context": 0,
+            "other_miscellaneous": 7
+          }
+        }
+      },
+      "reply": {
+        "non_empty_reply_rate": 1.0,
+        "average_reply_length": 72.0,
+        "average_reply_words": 14.0
+      },
+      "escalation": {
+        "auto_handle_rate": 1.0,
+        "escalation_rate": 0.0,
+        "escalation_reason_counts": {
+          "Intent 'other_miscellaneous' can be handled automatically by baseline policy.": 150
+        },
+        "note": "Escalation decisions are baseline policy outputs, not human-annotated ground truth."
+      }
+    },
+    "KeywordBaseline": {
+      "methodology": "Deterministic 10-intent keyword taxonomy rules with context disambiguation; historical response retrieval.",
+      "intent_classification": {
+        "accuracy": 0.58,
+        "macro_f1": 0.5914,
+        "per_class": {
+          "playback_streaming_issue": {
+            "precision": 0.4615,
+            "recall": 0.2857,
+            "f1": 0.3529,
+            "support": 21
+          },
+          "offline_downloads_issue": {
+            "precision": 0.7368,
+            "recall": 0.875,
+            "f1": 0.8,
+            "support": 16
+          },
+          "account_access_credentials": {
+            "precision": 1.0,
+            "recall": 0.7857,
+            "f1": 0.88,
+            "support": 14
+          },
+          "billing_subscription_payment": {
+            "precision": 0.8333,
+            "recall": 0.7692,
+            "f1": 0.8,
+            "support": 13
+          },
+          "plan_management_discount": {
+            "precision": 0.9,
+            "recall": 0.5294,
+            "f1": 0.6667,
+            "support": 17
+          },
+          "content_catalog_licensing": {
+            "precision": 0.5714,
+            "recall": 0.381,
+            "f1": 0.4571,
+            "support": 21
+          },
+          "playlist_library_curation": {
+            "precision": 0.7059,
+            "recall": 0.6316,
+            "f1": 0.6667,
+            "support": 19
+          },
+          "app_technical_device": {
+            "precision": 0.8571,
+            "recall": 0.4615,
+            "f1": 0.6,
+            "support": 13
+          },
+          "unclear_insufficient_context": {
+            "precision": 0.2917,
+            "recall": 0.7778,
+            "f1": 0.4242,
+            "support": 9
+          },
+          "other_miscellaneous": {
+            "precision": 0.1739,
+            "recall": 0.5714,
+            "f1": 0.2667,
+            "support": 7
+          }
+        },
+        "confusion_matrix": {
+          "playback_streaming_issue": {
+            "playback_streaming_issue": 6,
+            "offline_downloads_issue": 1,
+            "account_access_credentials": 0,
+            "billing_subscription_payment": 0,
+            "plan_management_discount": 0,
+            "content_catalog_licensing": 2,
+            "playlist_library_curation": 3,
+            "app_technical_device": 0,
+            "unclear_insufficient_context": 6,
+            "other_miscellaneous": 3
+          },
+          "offline_downloads_issue": {
+            "playback_streaming_issue": 0,
+            "offline_downloads_issue": 14,
+            "account_access_credentials": 0,
+            "billing_subscription_payment": 0,
+            "plan_management_discount": 0,
+            "content_catalog_licensing": 0,
+            "playlist_library_curation": 0,
+            "app_technical_device": 0,
+            "unclear_insufficient_context": 0,
+            "other_miscellaneous": 2
+          },
+          "account_access_credentials": {
+            "playback_streaming_issue": 1,
+            "offline_downloads_issue": 1,
+            "account_access_credentials": 11,
+            "billing_subscription_payment": 0,
+            "plan_management_discount": 0,
+            "content_catalog_licensing": 1,
+            "playlist_library_curation": 0,
+            "app_technical_device": 0,
+            "unclear_insufficient_context": 0,
+            "other_miscellaneous": 0
+          },
+          "billing_subscription_payment": {
+            "playback_streaming_issue": 0,
+            "offline_downloads_issue": 0,
+            "account_access_credentials": 0,
+            "billing_subscription_payment": 10,
+            "plan_management_discount": 0,
+            "content_catalog_licensing": 0,
+            "playlist_library_curation": 0,
+            "app_technical_device": 0,
+            "unclear_insufficient_context": 1,
+            "other_miscellaneous": 2
+          },
+          "plan_management_discount": {
+            "playback_streaming_issue": 2,
+            "offline_downloads_issue": 1,
+            "account_access_credentials": 0,
+            "billing_subscription_payment": 2,
+            "plan_management_discount": 9,
+            "content_catalog_licensing": 0,
+            "playlist_library_curation": 0,
+            "app_technical_device": 0,
+            "unclear_insufficient_context": 2,
+            "other_miscellaneous": 1
+          },
+          "content_catalog_licensing": {
+            "playback_streaming_issue": 2,
+            "offline_downloads_issue": 0,
+            "account_access_credentials": 0,
+            "billing_subscription_payment": 0,
+            "plan_management_discount": 0,
+            "content_catalog_licensing": 8,
+            "playlist_library_curation": 0,
+            "app_technical_device": 0,
+            "unclear_insufficient_context": 5,
+            "other_miscellaneous": 6
+          },
+          "playlist_library_curation": {
+            "playback_streaming_issue": 0,
+            "offline_downloads_issue": 1,
+            "account_access_credentials": 0,
+            "billing_subscription_payment": 0,
+            "plan_management_discount": 0,
+            "content_catalog_licensing": 3,
+            "playlist_library_curation": 12,
+            "app_technical_device": 0,
+            "unclear_insufficient_context": 1,
+            "other_miscellaneous": 2
+          },
+          "app_technical_device": {
+            "playback_streaming_issue": 1,
+            "offline_downloads_issue": 1,
+            "account_access_credentials": 0,
+            "billing_subscription_payment": 0,
+            "plan_management_discount": 0,
+            "content_catalog_licensing": 0,
+            "playlist_library_curation": 2,
+            "app_technical_device": 6,
+            "unclear_insufficient_context": 2,
+            "other_miscellaneous": 1
+          },
+          "unclear_insufficient_context": {
+            "playback_streaming_issue": 0,
+            "offline_downloads_issue": 0,
+            "account_access_credentials": 0,
+            "billing_subscription_payment": 0,
+            "plan_management_discount": 0,
+            "content_catalog_licensing": 0,
+            "playlist_library_curation": 0,
+            "app_technical_device": 0,
+            "unclear_insufficient_context": 7,
+            "other_miscellaneous": 2
+          },
+          "other_miscellaneous": {
+            "playback_streaming_issue": 1,
+            "offline_downloads_issue": 0,
+            "account_access_credentials": 0,
+            "billing_subscription_payment": 0,
+            "plan_management_discount": 1,
+            "content_catalog_licensing": 0,
+            "playlist_library_curation": 0,
+            "app_technical_device": 1,
+            "unclear_insufficient_context": 0,
+            "other_miscellaneous": 4
+          }
+        }
+      },
+      "reply": {
+        "non_empty_reply_rate": 1.0,
+        "average_reply_length": 115.37,
+        "average_reply_words": 19.57
+      },
+      "escalation": {
+        "auto_handle_rate": 0.8467,
+        "escalation_rate": 0.1533,
+        "escalation_reason_counts": {
+          "Intent 'unclear_insufficient_context' can be handled automatically by baseline policy.": 24,
+          "Intent 'playlist_library_curation' can be handled automatically by baseline policy.": 17,
+          "Intent 'plan_management_discount' can be handled automatically by baseline policy.": 10,
+          "Intent 'other_miscellaneous' can be handled automatically by baseline policy.": 23,
+          "Intent 'offline_downloads_issue' can be handled automatically by baseline policy.": 19,
+          "Intent 'playback_streaming_issue' can be handled automatically by baseline policy.": 13,
+          "Intent 'account_access_credentials' requires escalation per security/financial policy (Account Access / Credentials).": 11,
+          "Intent 'billing_subscription_payment' requires escalation per security/financial policy (Billing / Payment / Charges).": 12,
+          "Intent 'app_technical_device' can be handled automatically by baseline policy.": 7,
+          "Intent 'content_catalog_licensing' can be handled automatically by baseline policy.": 14
+        },
+        "note": "Escalation decisions are baseline policy outputs, not human-annotated ground truth."
+      }
+    }
+  },
+  "limitations": {
+    "training_heuristic_labels": "Heuristic training labels in spotify_pairs are weak signals, NOT human ground truth.",
+    "golden_evaluation_ground_truth": "Only the 150 reviewed golden examples are human evaluation ground truth.",
+    "pending_exclusion": "172 pending examples are excluded from both evaluation and training/retrieval.",
+    "escalation_policy": "Escalation decisions are deterministic baseline policy outputs, not human labels. No escalation ground truth exists in the dataset.",
+    "response_quality": "No LLM-as-judge or automated semantic similarity metric implemented yet. Reply metrics only measure delivery and length."
+  }
+}

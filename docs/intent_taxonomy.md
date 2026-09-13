@@ -330,6 +330,38 @@ The intent taxonomy was derived through a multi-stage empirical discovery proces
 
 ---
 
+### `other_miscellaneous` — Other / Miscellaneous
+
+- **Description:** General conversational banter, social praise, feature requests that do not fit the technical support domains, or uncategorizable edge cases that are not genuinely ambiguous.
+- **Empirical Frequency (Initial Inquiries):** 9,252 (34.31%)
+- **Difficulty Rating:** `Easy`
+- **Escalation Policy:** Automated Deflection / RAG Candidate
+- **Actionable Resolution:** No immediate technical action required. Route to general support, feedback, or social channels as appropriate.
+
+**Inclusion Criteria:**
+- Social praise, thank-you messages, or general encouragement with no actionable support problem
+- Feature requests or suggestions that do not report a current defect
+- General conversational filler or non-support greetings
+- Messages that do not fit any defined technical support domain and are not genuinely underspecified
+
+**Exclusion Criteria:**
+- Any message containing a concrete technical symptom (e.g., 'crashing' -> app_technical_device, 'won't download' -> offline_downloads_issue)
+- Any message that is genuinely underspecified despite context (route to unclear_insufficient_context)
+- Any financial dispute or billing question (route to billing_subscription_payment)
+
+**Confusable Boundaries:**
+- *vs. `unclear_insufficient_context`:* Use other_miscellaneous when the message is clearly conversational/praise/suggestion but not underspecified. Use unclear_insufficient_context when the message lacks diagnostic detail needed to route support.
+- *vs. `content_catalog_licensing`:* Feature requests about adding artists/albums are typically other_miscellaneous unless they are about missing/licensed tracks in the catalog.
+
+**Representative Examples:**
+> "Love the new update!"
+> "Thanks so much for the quick response."
+> "Can you add this song to the catalog?"
+> "Spotify is the best app ever."
+> "Congratulations on the feature release."
+
+---
+
 ## 4. Taxonomy Quality & Design Decisions
 
 ### Coverage

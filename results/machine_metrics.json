@@ -1,0 +1,139 @@
+{
+  "metadata": {
+    "kind": "MACHINE-GENERATED DIAGNOSTIC - NOT human labels, NOT LLM judge scores",
+    "method": "deterministic_heuristic_v1",
+    "rubric_target": "v1-scales (NOT LLM-scored)",
+    "full_rows": 300,
+    "machine_calibration_rows": 100,
+    "machine_sources": {
+      "deterministic_heuristic_v1 (no LLM call; API unavailable or bypassed)": 100
+    },
+    "timestamp_utc": "2026-09-13T07:26:38.974119+00:00",
+    "leakage_status": "PASSED (retrieval_source_pair_id never in 322 golden IDs)",
+    "disclaimer": "No human-vs-judge agreement can be computed from machine labels. The official workflow still requires genuine 100/100 human calibration."
+  },
+  "MostFrequentBaseline": {
+    "machine_relevance": {
+      "mean": 0.1067,
+      "n": 150,
+      "distribution": {
+        "0": 137,
+        "1": 10,
+        "2": 3,
+        "3": 0
+      }
+    },
+    "machine_helpfulness": {
+      "mean": 3.0,
+      "n": 150,
+      "distribution": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 150
+      }
+    },
+    "machine_groundedness": {
+      "mean": 3.0,
+      "n": 150,
+      "distribution": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 150
+      }
+    },
+    "machine_appropriateness": {
+      "mean": 3.0,
+      "n": 150,
+      "distribution": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 150
+      }
+    },
+    "machine_unsupported_claims": {
+      "mean": 0.0,
+      "n": 150,
+      "distribution": {
+        "0": 150,
+        "1": 0,
+        "2": 0,
+        "3": 0
+      }
+    },
+    "machine_overall": {
+      "mean": 2.02,
+      "n": 150,
+      "distribution": {
+        "0": 0,
+        "1": 0,
+        "2": 147,
+        "3": 3
+      }
+    }
+  },
+  "KeywordBaseline": {
+    "machine_relevance": {
+      "mean": 0.1533,
+      "n": 150,
+      "distribution": {
+        "0": 133,
+        "1": 11,
+        "2": 6,
+        "3": 0
+      }
+    },
+    "machine_helpfulness": {
+      "mean": 2.5067,
+      "n": 150,
+      "distribution": {
+        "0": 0,
+        "1": 0,
+        "2": 74,
+        "3": 76
+      }
+    },
+    "machine_groundedness": {
+      "mean": 3.0,
+      "n": 150,
+      "distribution": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 150
+      }
+    },
+    "machine_appropriateness": {
+      "mean": 3.0,
+      "n": 150,
+      "distribution": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 150
+      }
+    },
+    "machine_unsupported_claims": {
+      "mean": 0.0,
+      "n": 150,
+      "distribution": {
+        "0": 150,
+        "1": 0,
+        "2": 0,
+        "3": 0
+      }
+    },
+    "machine_overall": {
+      "mean": 2.02,
+      "n": 150,
+      "distribution": {
+        "0": 0,
+        "1": 0,
+        "2": 147,
+        "3": 3
+      }
+    }
+  }
+}

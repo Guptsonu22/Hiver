@@ -314,6 +314,40 @@ INTENT_TAXONOMY: Dict[str, IntentDefinition] = {
         patterns=[
             r'\b(not working|doesn\'t work|doesnt work|broken|help|fix|why|same issue|still waiting|please help)\b'
         ]
+    ),
+
+    "other_miscellaneous": IntentDefinition(
+        name="other_miscellaneous",
+        display_name="Other / Miscellaneous",
+        description="General conversational banter, social praise, feature requests that do not fit the technical support domains, or uncategorizable edge cases that are not genuinely ambiguous.",
+        inclusion_rules=[
+            "Social praise, thank-you messages, or general encouragement with no actionable support problem",
+            "Feature requests or suggestions that do not report a current defect",
+            "General conversational filler or non-support greetings",
+            "Messages that do not fit any defined technical support domain and are not genuinely underspecified"
+        ],
+        exclusion_rules=[
+            "Any message containing a concrete technical symptom (e.g., 'crashing' -> app_technical_device, 'won't download' -> offline_downloads_issue)",
+            "Any message that is genuinely underspecified despite context (route to unclear_insufficient_context)",
+            "Any financial dispute or billing question (route to billing_subscription_payment)"
+        ],
+        confusable_intents={
+            "unclear_insufficient_context": "Use other_miscellaneous when the message is clearly conversational/praise/suggestion but not underspecified. Use unclear_insufficient_context when the message lacks diagnostic detail needed to route support.",
+            "content_catalog_licensing": "Feature requests about adding artists/albums are typically other_miscellaneous unless they are about missing/licensed tracks in the catalog."
+        },
+        actionability="No immediate technical action required. Route to general support, feedback, or social channels as appropriate.",
+        escalation_recommended=False,
+        difficulty="Easy",
+        representative_examples=[
+            "Love the new update!",
+            "Thanks so much for the quick response.",
+            "Can you add this song to the catalog?",
+            "Spotify is the best app ever.",
+            "Congratulations on the feature release."
+        ],
+        patterns=[
+            r'\b(love|thanks|thank you|congratulations|great|best app|awesome|feature request|suggestion|keep it up|well done|nice work|hope you enjoy)\b'
+        ]
     )
 }
 

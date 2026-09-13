@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "evaluation_population": 150,
+    "training_retrieval_count": 42770,
+    "overlap_after_exclusion": 0,
+    "top_k": 3,
+    "response_mode": "extractive (top-1 historical response; no hallucination by construction)",
+    "escalation_note": "Policy outputs only; no escalation accuracy (no human escalation labels)."
+  },
+  "intent_classification": {
+    "accuracy": 0.4867,
+    "macro_f1": 0.5086,
+    "per_class_f1": {
+      "playback_streaming_issue": 0.3529,
+      "offline_downloads_issue": 0.8485,
+      "account_access_credentials": 0.7273,
+      "billing_subscription_payment": 0.7273,
+      "plan_management_discount": 0.56,
+      "content_catalog_licensing": 0.4118,
+      "playlist_library_curation": 0.4848,
+      "app_technical_device": 0.5,
+      "unclear_insufficient_context": 0.3404,
+      "other_miscellaneous": 0.1333
+    },
+    "classification_methods": {
+      "tfidf_knn": 150
+    }
+  },
+  "retrieval": {
+    "retrieval_success_rate": 1.0,
+    "empty_evidence_rate": 0.0,
+    "mean_top1_similarity": 0.5967,
+    "mean_evidence_count": 3.0,
+    "dm_redirect_evidence_rate": 0.3933
+  },
+  "escalation": {
+    "escalation_rate": 0.38,
+    "auto_handle_rate": 0.62
+  },
+  "reply_quality_judge": null
+}
